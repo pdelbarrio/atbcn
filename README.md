@@ -9,6 +9,8 @@
 
 ## Agenda of cultural events in the city
 
+## Todo list
+
 [ ] - General structure with moked events
 [ ] - Create components
 [ ] - Create database in Supabase
@@ -17,3 +19,4 @@
 [ ] - Add form to create events
 [ ] - Add testing
 [ ] - Add event validation functionality
+[ ] - Implement PWA functionality
