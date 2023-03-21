@@ -12,11 +12,19 @@
 ## Todo list
 
 [ ] - General structure with moked events
+
 [ ] - Create components
+
 [ ] - Create database in Supabase
+
 [ ] - Create models in prisma
+
 [ ] - Add autentication and social login
+
 [ ] - Add form to create events
+
 [ ] - Add testing
+
 [ ] - Add event validation functionality
+
 [ ] - Implement PWA functionality
