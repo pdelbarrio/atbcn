@@ -11,7 +11,8 @@
 
 ## Todo list
 
-[ ] - Create structure with moked events  
+[ ] - Create UI design and prototype in Figma  
+[ ] - Create structure with mocked events  
 [ ] - Create components  
 [ ] - Create modal to see event info  
 [ ] - Create database in Supabase  
