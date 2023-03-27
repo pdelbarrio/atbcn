@@ -32,9 +32,3 @@
 ### Figma prototype
 
 https://www.figma.com/file/b4la60niKI0JaT5pwKvnwJ/%40bcn?node-id=0-1&t=xD9a7fB6oTqLQZIe-0
-# Instrucciones
-
-Acceder a la carpeta y ejecutar `npm run dev`
-
-# Whitebox Office prueba técnica (React)
-
