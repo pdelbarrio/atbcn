@@ -28,6 +28,9 @@
 [ ] - Add event validation functionality  
 [ ] - Implement PWA functionality
 [ ] - Implement dark mode
+[ ] - Add autentication and social login  
+[ ] - Add form to create events  
+[ ] - Implement dark mode
 
 ### Figma prototype
 
