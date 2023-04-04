@@ -3,7 +3,7 @@ export const events = [
     id: 1,
     name: "Messhuggah",
     date: "15/03/2023 19:00h",
-    type: "concierto",
+    tags: ["metal", "live", "djent"],
     location: "Sala Salamandra",
     price: "7€",
     description:
@@ -17,7 +17,7 @@ export const events = [
     id: 2,
     name: "proyección de Satantango",
     date: "19/03/2023 12:00h",
-    type: "proyeccion",
+    tags: ["cine", "Bela Tarr"],
     location: "Cinètika",
     price: "voluntad",
     description:
@@ -31,7 +31,7 @@ export const events = [
     id: 3,
     name: "Igorr + Amenra",
     date: "21/03/2023 12:00h",
-    type: "concierto",
+    tags: ["live", "metal", "breakcore"],
     location: "Apolo",
     price: "35€",
     description:
@@ -45,7 +45,7 @@ export const events = [
     id: 4,
     name: "Cruz + Avern",
     date: "13/03/2023 12:00h",
-    type: "concierto",
+    tags: ["live", "death metal"],
     location: "Blokes Fantasma",
     price: "voluntad",
     description:
@@ -59,7 +59,7 @@ export const events = [
     id: 5,
     name: "Vermut Aniversari GTS",
     date: "19/03/2023 12:00h",
-    type: "pinchada",
+    tags: ["dj", "llibres", "discos"],
     location: "Seu GTS",
     price: "gratis",
     description:
@@ -73,7 +73,7 @@ export const events = [
     id: 6,
     name: "Unreal Discordian Show",
     date: "21/03/2023 19:00h",
-    type: "concierto",
+    tags: ["live", "jazz", "show"],
     location: "Jamboree",
     price: "12€",
     description:
@@ -87,7 +87,7 @@ export const events = [
     id: 7,
     name: "Miguel Puertas + Zónula",
     date: "26/03/2023 12:00h",
-    type: "proyeccion y musica",
+    tags: ["live", "inmersive", "proyecciones"],
     location: "Cinètika",
     price: "voluntad",
     description:
@@ -101,7 +101,7 @@ export const events = [
     id: 8,
     name: "Thérese + Magento + Kseek",
     date: "19/03/2023 12:00h",
-    type: "concierto",
+    tags: ["live", "music", "postcore"],
     location: "Espai Dinamo",
     price: "voluntad",
     description:
@@ -115,7 +115,7 @@ export const events = [
     id: 9,
     name: "Juanito))) + Danza Mecánica + Jordi Heras Fauque",
     date: "25/03/2023 19:30h",
-    type: "concert",
+    tags: ["live", "experimental", "noise"],
     location: "Antic Forn de Vallcarca",
     price: "6€",
     description:
@@ -129,7 +129,7 @@ export const events = [
     id: 10,
     name: "Egg + Nara is Neus",
     date: "18/03/2023 13:00h",
-    type: "concert i punxada",
+    tags: ["live", "dj", "poblenou"],
     location: "Ultralocal Records",
     price: "voluntad",
     description:
@@ -143,7 +143,7 @@ export const events = [
     id: 11,
     name: "The Capaces + Gürtel Club",
     date: "24/03/2023 20:30h",
-    type: "concert",
+    tags: ["live", "music", "Punk'n'roll"],
     location: "Sala Wolf",
     price: "12€",
     description:
@@ -155,10 +155,10 @@ export const events = [
   },
   {
     id: 12,
-    name: "proyección de XXX",
+    name: "MONJAMÓN FESTIVAL",
     date: "19/03/2023 12:00h",
-    type: "cine",
-    location: "Cinètika",
+    tags: ["live", "music", "fest", "petardeo"],
+    location: "Sala Wolf",
     price: "voluntad",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
@@ -171,7 +171,7 @@ export const events = [
     id: 13,
     name: "Ovvo + Montnegre",
     date: "17/03/2023 19:00h",
-    type: "concert",
+    tags: ["live", "music", "posthardcore"],
     location: "Freedonia",
     price: "8€",
     description:
@@ -185,7 +185,7 @@ export const events = [
     id: 14,
     name: "El Pèsol Feréstec",
     date: "19/03/2023 12:00h",
-    type: "concert",
+    tags: ["live", "music", "indie", "folk"],
     location: "Heliogàbal",
     price: "3€",
     description:
@@ -199,7 +199,7 @@ export const events = [
     id: 15,
     name: "Tomomi Kubo + Usnea",
     date: "18/03/2023 19:00h",
-    type: "concierto",
+    tags: ["music", "experimental", "live", "ambient", "ondes martenot"],
     location: "Sinestesia",
     price: "taquilla inversa",
     description:
@@ -211,11 +211,11 @@ export const events = [
   },
   {
     id: 16,
-    name: "proyección de XXX",
+    name: "Alegrias Riojanas + Inmotep",
     date: "19/03/2023 12:00h",
-    type: "cine",
-    location: "Cinètika",
-    price: "voluntad",
+    tags: ["cine", "corto", "raro"],
+    location: "Auditori CCCB",
+    price: "8€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
     poster: "",
@@ -227,7 +227,7 @@ export const events = [
     id: 17,
     name: "La Casa Fantom + Meltem",
     date: "19/03/2023 12:00h",
-    type: "concierto",
+    tags: ["live", "noisecore", "duo", "diy"],
     location: "Los Blokes Fantasma",
     price: "a partir de 3€",
     description:
@@ -241,7 +241,7 @@ export const events = [
     id: 18,
     name: "Fosc Fest",
     date: "01/04/2023 19:00h",
-    type: "festival musica",
+    tags: ["live", "fest", "music", "dark", "goth"],
     location: "Sala Upload",
     price: "18€",
     description:
@@ -255,7 +255,7 @@ export const events = [
     id: 19,
     name: "Volition Immanent + Comisarios de la Luz",
     date: "25/03/2023 00:00h",
-    type: "concierto + dj",
+    tags: ["postpunk", "djs", "industrial", "all night long"],
     location: "Lolita Razz",
     price: "21€",
     description:
@@ -269,7 +269,7 @@ export const events = [
     id: 20,
     name: "Senyors Tranquil",
     date: "18/03/2023 20:00h",
-    type: "concert",
+    tags: ["música", "en català"],
     location: "La Violeta de Gràcia",
     price: "5€",
     description:
@@ -283,7 +283,7 @@ export const events = [
     id: 21,
     name: "La Reconquista + Eternal Landscapes",
     date: "17/03/2023 21:00h",
-    type: "concierto",
+    tags: ["music", "live", "postrock"],
     location: "5€",
     price: "voluntad",
     description:
@@ -297,7 +297,7 @@ export const events = [
     id: 22,
     name: "Arquea Colectivo",
     date: "01/04/2023 17:00h",
-    type: "festival concierto",
+    tags: ["synth", "experimental", "proyecciones"],
     location: "Dinamo Espai",
     price: "voluntad",
     description:
@@ -311,7 +311,7 @@ export const events = [
     id: 23,
     name: "Fuzzy Eyes + Newborn Ghost",
     date: "17/03/2023 21:00h",
-    type: "concierto",
+    tags: ["music", "live", "dream pop"],
     location: "Sala Slow",
     price: "8€",
     description:
@@ -325,7 +325,7 @@ export const events = [
     id: 24,
     name: "Mecànica Clásica + Senthulà",
     date: "12/05/2023 20:00h",
-    type: "concierto",
+    tags: ["cine", "Bela Tarr"],
     location: "Sala Taro",
     price: "5€",
     description:
@@ -339,7 +339,7 @@ export const events = [
     id: 25,
     name: "Nocturna Discordia #331",
     date: "23/03/2023 20:00h",
-    type: "concierto",
+    tags: ["free impro", "avantgarde", "jazz"],
     location: "Soda Acustic",
     price: "7€",
     description:
@@ -353,7 +353,7 @@ export const events = [
     id: 26,
     name: "Pye Corner Audio + Miguel Puertas",
     date: "24/03/2023 20:00h",
-    type: "concierto",
+    tags: ["electronic", "proyecciones", "16mm"],
     location: "CaixaForum",
     price: "10€",
     description:
@@ -367,7 +367,7 @@ export const events = [
     id: 27,
     name: "Day of the Droids",
     date: "12/03/2023 12:00h",
-    type: "festival",
+    tags: ["breakcore", "drum'n'bass", "gabber", "live"],
     location: "RAI",
     price: "voluntad",
     description:
@@ -381,7 +381,7 @@ export const events = [
     id: 28,
     name: "Unspkble + Les Aranyes",
     date: "26/02/2023 20:00h",
-    type: "concierto",
+    tags: ["punkrock", "en català"],
     location: "Blokes Fantasma",
     price: "5€",
     description:
@@ -395,7 +395,7 @@ export const events = [
     id: 29,
     name: "Ferme a la Bouche",
     date: "25/02/2023 12:00h",
-    type: "expo + conciertos",
+    tags: ["expo", "performance", "drag", "live", "dj"],
     location: "Cinètika",
     price: "voluntad",
     description:
@@ -407,11 +407,11 @@ export const events = [
   },
   {
     id: 30,
-    name: "proyección de XXX",
-    date: "19/03/2023 12:00h",
-    type: "cine",
-    location: "Niu BCN",
-    price: "gratis",
+    name: "Barcelona Psych Fest",
+    date: "14/04/2023 12:00h",
+    tags: [" psych", "folk", "kraut", "space rock"],
+    location: "Sala Upload",
+    price: "15€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
     poster: "",
@@ -423,7 +423,7 @@ export const events = [
     id: 31,
     name: "25Hombres + Nick Vander",
     date: "24/02/2023 19:00h",
-    type: "concierto",
+    tags: ["noise", "experimental"],
     location: "RAI",
     price: "5€",
     description:
@@ -435,9 +435,9 @@ export const events = [
   },
   {
     id: 32,
-    name: "proyección de XXX",
+    name: "proyección de John Dies At the End",
     date: "19/03/2023 12:00h",
-    type: "cine",
+    tags: ["cine", "mindfucks", "sci-fi"],
     location: "Cinètika",
     price: "voluntad",
     description:
@@ -451,7 +451,7 @@ export const events = [
     id: 33,
     name: "Festival death metal",
     date: "18/02/2023 12:00h",
-    type: "festival musica",
+    tags: ["death metal", "vermut", "DIY"],
     location: "CSO La Ruina",
     price: "3€",
     description:
@@ -465,7 +465,7 @@ export const events = [
     id: 34,
     name: "Loscil + Nueen",
     date: "23/02/2023 23:00h",
-    type: "concierto",
+    tags: ["live", "ambient", "Please Advice"],
     location: "Laut",
     price: "12€",
     description:
@@ -477,10 +477,10 @@ export const events = [
   },
   {
     id: 35,
-    name: "Dj de la muerte",
+    name: "Godflesh + Inerth + Osserp",
     date: "19/03/2023 12:00h",
-    type: "cine",
-    location: "Cinètika",
+    tags: ["metal", "grind", "sludge"],
+    location: "Sala Extraperlo",
     price: "voluntad",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",

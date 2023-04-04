@@ -2,7 +2,7 @@ export type EventType = {
   id: number;
   name: string;
   date: string;
-  type: string;
+  tags: string[];
   location: string;
   price: string;
   description: string;
