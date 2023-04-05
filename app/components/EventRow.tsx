@@ -1,14 +1,26 @@
+"use client";
+
 import { EventType } from "@/types/types";
-import React from "react";
+import React, { useState } from "react";
 import Tag from "./Tag";
+import { AnimatePresence } from "framer-motion";
+import EventModal from "./EventModal";
 
 interface Props {
   event: EventType;
 }
 
 const EventRow = ({ event }: Props) => {
+  const [showModal, setShowModal] = useState<boolean>(false);
+
+  const close = () => setShowModal(false);
+  const open = () => setShowModal(true);
+
   return (
-    <div className="bg-gray-300 rounded-lg shadow-lg overflow-hidden mb-3">
+    <div
+      onClick={() => (showModal ? close() : open())}
+      className="bg-gray-300 rounded-lg shadow-lg overflow-hidden mb-3"
+    >
       <div className="flex">
         <div className="w-3/4 p-4">
           <div className="flex justify-between mb-2">
@@ -24,8 +36,8 @@ const EventRow = ({ event }: Props) => {
           </div>
           <div className="h-10 flex items-center">
             {event.tags
-              ? event.tags.map((tag) => {
-                  return <Tag tag={tag} />;
+              ? event.tags.map((tag, id) => {
+                  return <Tag key={id} tag={tag} />;
                 })
               : null}
           </div>
@@ -35,6 +47,10 @@ const EventRow = ({ event }: Props) => {
           <p className=" font-bold">{event.price}</p>
         </div>
       </div>
+
+      <AnimatePresence initial={false} mode="wait" onExitComplete={() => null}>
+        {showModal && <EventModal setShowModal={setShowModal} event={event} />}
+      </AnimatePresence>
     </div>
   );
 };
