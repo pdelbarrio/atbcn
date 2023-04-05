@@ -8,8 +8,9 @@ export const events = [
     price: "7€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -22,8 +23,9 @@ export const events = [
     price: "voluntad",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -36,8 +38,9 @@ export const events = [
     price: "35€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -50,8 +53,9 @@ export const events = [
     price: "voluntad",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -64,8 +68,9 @@ export const events = [
     price: "gratis",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -78,8 +83,9 @@ export const events = [
     price: "12€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -92,8 +98,9 @@ export const events = [
     price: "voluntad",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -106,8 +113,9 @@ export const events = [
     price: "voluntad",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -120,8 +128,9 @@ export const events = [
     price: "6€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -134,8 +143,9 @@ export const events = [
     price: "voluntad",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -148,8 +158,9 @@ export const events = [
     price: "12€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -162,8 +173,9 @@ export const events = [
     price: "voluntad",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -176,8 +188,9 @@ export const events = [
     price: "8€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -190,8 +203,9 @@ export const events = [
     price: "3€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -204,8 +218,9 @@ export const events = [
     price: "taquilla inversa",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -218,8 +233,9 @@ export const events = [
     price: "8€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -232,8 +248,9 @@ export const events = [
     price: "a partir de 3€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -246,8 +263,9 @@ export const events = [
     price: "18€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -260,8 +278,9 @@ export const events = [
     price: "21€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -274,8 +293,9 @@ export const events = [
     price: "5€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -288,8 +308,9 @@ export const events = [
     price: "voluntad",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -302,8 +323,9 @@ export const events = [
     price: "voluntad",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -316,8 +338,9 @@ export const events = [
     price: "8€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -330,8 +353,9 @@ export const events = [
     price: "5€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -344,8 +368,9 @@ export const events = [
     price: "7€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -358,8 +383,9 @@ export const events = [
     price: "10€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -372,8 +398,9 @@ export const events = [
     price: "voluntad",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -386,8 +413,9 @@ export const events = [
     price: "5€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -400,8 +428,9 @@ export const events = [
     price: "voluntad",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -414,8 +443,9 @@ export const events = [
     price: "15€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -428,8 +458,9 @@ export const events = [
     price: "5€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -442,8 +473,9 @@ export const events = [
     price: "voluntad",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -456,8 +488,9 @@ export const events = [
     price: "3€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -470,8 +503,9 @@ export const events = [
     price: "12€",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
@@ -484,8 +518,9 @@ export const events = [
     price: "voluntad",
     description:
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
-    poster: "",
-    link: "",
+    poster:
+      "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
+    link: "http://linkofevent.com/",
     validated: false,
     itsOver: false,
   },
