@@ -42,7 +42,7 @@ const EventRow = ({ event }: Props) => {
               : null}
           </div>
         </div>
-        <div className="w-1/4 bg-gray-300 text-gray-700 p-4 text-center">
+        <div className="w-1/4 bg-gray-300 text-gray-700 px-2 py-4 text-right mr-2">
           <p className="text-gray-600">{event.location}</p>
           <p className=" font-bold">{event.price}</p>
         </div>

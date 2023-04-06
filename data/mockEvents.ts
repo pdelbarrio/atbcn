@@ -25,7 +25,7 @@ export const events = [
       "Lorem ipsum chiquito no puedor en directo por la gloria de mi madre improvisación con un patinete",
     poster:
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
-    link: "http://linkofevent.com/",
+    link: "",
     validated: false,
     itsOver: false,
   },
