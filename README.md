@@ -16,12 +16,13 @@
 
 ## Todo list
 
-[ ] - Create prototype in Figma  
-[ ] - Create structure with mocked events  
-[ ] - Create components  
-[ ] - Create modal to see event info  
-[ ] - Create database in Supabase  
+[x] - Create prototype in Figma  
+[x] - Create structure with mocked events  
+[x] - Create components  
+[x] - Create modal to see event info  
+[ ] - Implement date manipulation functionality  
 [ ] - Create models in prisma  
+[ ] - Create database in Supabase with mocked events
 [ ] - Add autentication and social login  
 [ ] - Add form to create events  
 [ ] - Add testing  
