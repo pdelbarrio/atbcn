@@ -12,7 +12,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 4,
@@ -57,7 +57,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 5,
@@ -72,7 +72,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 6,
@@ -87,7 +87,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 7,
@@ -102,7 +102,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 8,
@@ -117,7 +117,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 9,
@@ -132,7 +132,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 10,
@@ -147,7 +147,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 11,
@@ -162,7 +162,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 12,
@@ -177,7 +177,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 13,
@@ -192,7 +192,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 14,
@@ -207,7 +207,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 15,
@@ -222,7 +222,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 16,
@@ -237,7 +237,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 17,
@@ -252,7 +252,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 18,
@@ -267,7 +267,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 19,
@@ -282,7 +282,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 20,
@@ -297,7 +297,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 21,
@@ -312,7 +312,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 22,
@@ -327,7 +327,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 23,
@@ -342,7 +342,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 24,
@@ -357,7 +357,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 25,
@@ -372,7 +372,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 26,
@@ -387,7 +387,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 27,
@@ -402,7 +402,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 28,
@@ -417,7 +417,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 29,
@@ -432,7 +432,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 30,
@@ -447,7 +447,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 31,
@@ -462,7 +462,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 32,
@@ -477,7 +477,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 33,
@@ -492,7 +492,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 34,
@@ -507,7 +507,7 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
   {
     id: 35,
@@ -522,6 +522,6 @@ export const events = [
       "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg",
     link: "http://linkofevent.com/",
     validated: false,
-    itsOver: false,
+    completed: false,
   },
 ];

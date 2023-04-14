@@ -20,11 +20,11 @@
 [x] - Create structure with mocked events  
 [x] - Create components  
 [x] - Create modal to see event info  
+[x] - Connected to Supabase without Prisma
 [ ] - Implement date manipulation functionality  
-[ ] - Create models in prisma  
-[ ] - Create database in Supabase with mocked events
 [ ] - Add autentication and social login  
 [ ] - Add form to create events  
+[ ] - once the events are entered into the database via form, implement progressive caching (getstaticprops with revalidation)
 [ ] - Add testing  
 [ ] - Add event validation functionality  
 [ ] - Implement PWA functionality
