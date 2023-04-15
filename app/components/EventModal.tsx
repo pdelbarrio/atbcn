@@ -1,5 +1,4 @@
 import { EventType } from "@/types/types";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import Tag from "./Tag";
 import { ClockIcon, LinkIcon, LocationIcon, TicketIcon } from "./Icons";
@@ -71,7 +70,7 @@ const EventModal = ({ setShowModal, event }: Props) => {
               </div>
             </div>
             <div className="w-1/3">
-              <Image
+              <img
                 className="w-full rounded-lg"
                 src={event.poster ? event.poster : defaultPoster}
                 alt={event.name}
