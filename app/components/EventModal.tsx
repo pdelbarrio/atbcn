@@ -77,7 +77,6 @@ const EventModal = ({ setShowModal, event }: Props) => {
               />
             </div>
           </div>
-          º
           <div className="mt-6">
             <div className="flex items-center">
               <LocationIcon />
