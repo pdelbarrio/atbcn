@@ -1,4 +1,5 @@
 import { EventType } from "@/types/types";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Tag from "./Tag";
 import { ClockIcon, LinkIcon, LocationIcon, TicketIcon } from "./Icons";
@@ -28,6 +29,9 @@ const dropIn = {
     opacity: 0,
   },
 };
+
+const defaultPoster =
+  "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg";
 
 const EventModal = ({ setShowModal, event }: Props) => {
   return (
@@ -67,14 +71,14 @@ const EventModal = ({ setShowModal, event }: Props) => {
               </div>
             </div>
             <div className="w-1/3">
-              <img
+              <Image
                 className="w-full rounded-lg"
-                src={event.poster}
+                src={event.poster ? event.poster : defaultPoster}
                 alt={event.name}
               />
             </div>
           </div>
-
+          º
           <div className="mt-6">
             <div className="flex items-center">
               <LocationIcon />
