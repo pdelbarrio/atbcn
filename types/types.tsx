@@ -9,8 +9,7 @@ export type EventType = {
   poster: string | null;
   link: string | null;
   validated: boolean;
-  created_by: number;
+  created_by: number | null;
   created_at: string;
-  updated_at: string;
   completed: boolean;
 };

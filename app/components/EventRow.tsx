@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import Tag from "./Tag";
 import { AnimatePresence } from "framer-motion";
 import EventModal from "./EventModal";
+import { formattedDate } from "@/utils/utils";
 
 interface Props {
   event: EventType;
@@ -12,6 +13,8 @@ interface Props {
 
 const EventRow = ({ event }: Props) => {
   const [showModal, setShowModal] = useState<boolean>(false);
+
+  const formattedDateStr = formattedDate(event.date);
 
   const close = () => setShowModal(false);
   const open = () => setShowModal(true);
@@ -25,7 +28,7 @@ const EventRow = ({ event }: Props) => {
         <div className="w-3/4 p-4">
           <div className="flex justify-between mb-2">
             <div className="w-1/2">
-              <p className="font-bold text-gray-700">{event.date}</p>
+              <p className="font-bold text-gray-700">{formattedDateStr}</p>
             </div>
             <div className="w-1/2 text-right">
               <p className="md:text-2xl font-bold text-gray-700">

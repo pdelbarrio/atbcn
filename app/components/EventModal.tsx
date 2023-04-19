@@ -2,6 +2,7 @@ import { EventType } from "@/types/types";
 import { motion } from "framer-motion";
 import Tag from "./Tag";
 import { ClockIcon, LinkIcon, LocationIcon, TicketIcon } from "./Icons";
+import { formattedDate } from "@/utils/utils";
 
 interface Props {
   setShowModal: (newValue: boolean) => void;
@@ -33,6 +34,7 @@ const defaultPoster =
   "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg";
 
 const EventModal = ({ setShowModal, event }: Props) => {
+  const formattedDateStr = formattedDate(event.date);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -84,7 +86,7 @@ const EventModal = ({ setShowModal, event }: Props) => {
             </div>
             <div className="flex items-center mt-2">
               <ClockIcon />
-              <p className="ml-2 text-gray-700 text-sm">{event.date}</p>
+              <p className="ml-2 text-gray-700 text-sm">{formattedDateStr}</p>
             </div>
             <div className="flex items-center mt-2">
               <TicketIcon />
