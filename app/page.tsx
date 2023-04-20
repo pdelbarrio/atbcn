@@ -12,7 +12,8 @@ async function getData(weekOffset: number = 0): Promise<EventType[]> {
   const currentWeekStart =
     currentDate.getTime() + weekOffset * 7 * 24 * 60 * 60 * 1000;
   const currentWeekEnd = currentWeekStart + 7 * 24 * 60 * 60 * 1000;
-  const filteredEvents = events?.filter((event) => {
+
+  const filteredEvents = (events ?? []).filter((event) => {
     const eventDate = new Date(event.date);
     const eventTime = eventDate.getTime();
     return eventTime >= currentWeekStart && eventTime < currentWeekEnd;
