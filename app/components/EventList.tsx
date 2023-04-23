@@ -5,6 +5,7 @@ import { startOfWeek, endOfWeek, addWeeks, subWeeks } from "date-fns";
 import { EventType } from "@/types/types";
 import { formattedDate } from "@/utils/utils";
 import EventRow from "./EventRow";
+import { LeftArrow, RightArrow } from "./Icons";
 
 interface Props {
   events: EventType[];
@@ -57,18 +58,18 @@ export default function EventList({ events }: Props) {
       <div className="max-w-screen-sm mx-auto px-4">
         <div className="flex justify-between py-4">
           <button
-            className="bg-gray-300 text-gray-800 font-bold p-2 px-4 rounded"
+            className=" text-gray-800 font-bold p-2 px-4 rounded sm:p-1"
             onClick={previousWeek}
             disabled={isFirstWeek}
           >
-            {isFirstWeek ? "estás al principio" : "semana previa"}
+            {isFirstWeek ? "" : <LeftArrow />}
           </button>
 
           <button
-            className="bg-gray-300 text-gray-800 font-bold p-2 px-4 rounded"
+            className=" text-gray-800 font-bold p-2 px-4 rounded sm:p-1"
             onClick={nextWeek}
           >
-            semana siguiente
+            <RightArrow />
           </button>
         </div>
       </div>
