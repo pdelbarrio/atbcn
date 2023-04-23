@@ -4,7 +4,7 @@ import { EventType } from "@/types/types";
 
 export const revalidate = 60;
 
-export async function getData(): Promise<EventType[]> {
+async function getData(): Promise<EventType[]> {
   const currentDate = new Date();
   const { data: events } = await supabase
     .from("events")
