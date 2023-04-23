@@ -34,7 +34,8 @@ const defaultPoster =
   "https://res.cloudinary.com/getoutbcn/image/upload/v1680721784/samples/poster_sh7xqa.jpg";
 
 const EventModal = ({ setShowModal, event }: Props) => {
-  const formattedDateStr = formattedDate(event.date);
+  const formattedDateStr = formattedDate(event.date, "PPPPp");
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
