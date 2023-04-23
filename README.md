@@ -16,14 +16,13 @@
 
 ## Todo list
 
-## Project Tasks
-
 - [x] Create prototype in Figma
 - [x] Create structure with mocked events
 - [x] Create components
 - [x] Create modal to see event info
 - [x] Connected to Supabase without Prisma
 - [x] Implement date manipulation functionality
+- [x] Implement pagination of events by week
 - [ ] Add form to create events
 - [ ] Add authentication and social login
 - [ ] Add middleware
