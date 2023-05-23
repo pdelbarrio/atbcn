@@ -1,5 +1,9 @@
 import NavBar from "./components/NavBar";
+import "react-datepicker/dist/react-datepicker.css";
 import "./globals.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { GlobalContextProvider } from "./context/events.context";
 
 export const metadata = {
   title: "@bcn",
@@ -15,8 +19,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <main className="bg-gray-500 min-h-screen w-screen">
-          <NavBar />
-          {children}
+          <GlobalContextProvider>
+            <NavBar />
+            {children}
+          </GlobalContextProvider>
+          <ToastContainer theme="colored" />
         </main>
       </body>
     </html>
