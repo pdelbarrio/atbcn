@@ -4,6 +4,7 @@ import "./globals.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { GlobalContextProvider } from "./context/events.context";
+import { AuthContextProvider } from "./context/auth.context";
 
 export const metadata = {
   title: "@bcn",
@@ -19,10 +20,12 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <main className="bg-gray-500 min-h-screen w-screen">
-          <GlobalContextProvider>
-            <NavBar />
-            {children}
-          </GlobalContextProvider>
+          <AuthContextProvider>
+            <GlobalContextProvider>
+              <NavBar />
+              {children}
+            </GlobalContextProvider>
+          </AuthContextProvider>
           <ToastContainer theme="colored" />
         </main>
       </body>
