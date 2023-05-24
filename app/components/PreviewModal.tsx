@@ -7,6 +7,7 @@ import { useGlobalContext } from "../context/events.context";
 import { useRouter } from "next/navigation";
 
 import { formattedDate } from "@/utils/utils";
+import { setErrorToast, setSuccessToast } from "@/utils/toasts";
 
 const dropIn = {
   hidden: {
@@ -71,9 +72,13 @@ const PreviewModal = () => {
       setUploadedPoster(null);
       setPreviewEvent(null);
       setTags([]);
+      setSuccessToast("Evento creado correctamente");
       router.push("/");
       return "Data inserted successfully!";
     } catch (error) {
+      setErrorToast(
+        "Error al crear el evento vuelve a intentarlo en unos minutos"
+      );
       throw error;
     }
   }

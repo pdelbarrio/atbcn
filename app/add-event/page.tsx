@@ -7,7 +7,7 @@ import Axios from "axios";
 import { AnimatePresence } from "framer-motion";
 import { eventSchema } from "@/utils/utils";
 import PreviewModal from "../components/PreviewModal";
-import { EventFormType, FormErrors } from "@/types/types";
+import { EventFormType, EventFormErrors } from "@/types/types";
 import { useGlobalContext } from "../context/events.context";
 
 const AddEvent = () => {
@@ -71,7 +71,7 @@ const AddEvent = () => {
       await eventSchema.validate(values, { abortEarly: false });
       return {};
     } catch (error: any) {
-      const errors: FormErrors = {};
+      const errors: EventFormErrors = {};
       let tagLength = 0;
       error.inner.forEach((e: any) => {
         if (
@@ -155,9 +155,9 @@ const AddEvent = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-            {(errors as FormErrors).name && (
+            {(errors as EventFormErrors).name && (
               <span className="text-red-500 font-bold italic text-xs">
-                {(errors as FormErrors).name}
+                {(errors as EventFormErrors).name}
               </span>
             )}
           </div>
@@ -173,9 +173,9 @@ const AddEvent = () => {
                 setDescriptionLength(e.target.value.length);
               }}
             ></textarea>
-            {(errors as FormErrors).description && (
+            {(errors as EventFormErrors).description && (
               <span className="text-red-500 font-bold italic text-xs">
-                {(errors as FormErrors).description}
+                {(errors as EventFormErrors).description}
               </span>
             )}
             <span className="block text-right text-gray-400 text-xs">
@@ -215,9 +215,9 @@ const AddEvent = () => {
                 Agregar tag
               </button>
             </div>
-            {(errors as FormErrors).tags && (
+            {(errors as EventFormErrors).tags && (
               <span className="text-red-500 font-bold italic text-xs">
-                {(errors as FormErrors).tags}
+                {(errors as EventFormErrors).tags}
               </span>
             )}
           </div>
@@ -231,9 +231,9 @@ const AddEvent = () => {
               value={location}
               onChange={(e) => setLocation(e.target.value)}
             />
-            {(errors as FormErrors).location && (
+            {(errors as EventFormErrors).location && (
               <span className="text-red-500 font-bold italic text-xs">
-                {(errors as FormErrors).location}
+                {(errors as EventFormErrors).location}
               </span>
             )}
           </div>
@@ -247,9 +247,9 @@ const AddEvent = () => {
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}
               />
-              {(errors as FormErrors).price && (
+              {(errors as EventFormErrors).price && (
                 <span className="text-red-500 font-bold italic text-xs">
-                  {(errors as FormErrors).price}
+                  {(errors as EventFormErrors).price}
                 </span>
               )}
             </div>
@@ -277,9 +277,9 @@ const AddEvent = () => {
               value={link}
               onChange={(e) => setLink(e.target.value)}
             />
-            {(errors as FormErrors).link && (
+            {(errors as EventFormErrors).link && (
               <span className="text-red-500 font-bold italic text-xs">
-                {(errors as FormErrors).link}
+                {(errors as EventFormErrors).link}
               </span>
             )}
           </div>

@@ -1,3 +1,5 @@
+import { SupabaseClient } from "@supabase/supabase-js";
+
 export interface EventType {
   id: number;
   name: string;
@@ -51,7 +53,7 @@ export interface EventFormType {
   link: string;
 }
 
-export interface FormErrors {
+export interface EventFormErrors {
   tags?: string[];
   [key: string]: string | string[] | undefined;
   name?: string;
@@ -59,4 +61,14 @@ export interface FormErrors {
   location?: string;
   price?: string;
   link?: string;
+}
+
+export interface AuthContextType {
+  supabaseclient: SupabaseClient;
+}
+
+export interface AuthFormErrors {
+  email?: string;
+  password?: string;
+  [key: string]: string | undefined;
 }

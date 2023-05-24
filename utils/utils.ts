@@ -12,7 +12,7 @@ export const eventSchema = Yup.object()
   .shape({
     name: Yup.string()
       .required("El nombre del evento es obligatorio")
-      .max(30, "El nombre no puede tener más de 30 caracteres"),
+      .max(35, "El nombre no puede tener más de 35 caracteres"),
     description: Yup.string().max(
       100,
       "La descripción no puede tener más de 100 caracteres"
@@ -27,14 +27,18 @@ export const eventSchema = Yup.object()
       .required("El precio es obligatorio")
       .max(30, "El precio no puede tener más de 30 caracteres"),
     link: Yup.string().max(
-      100,
-      "El enlace no puede tener más de 100 caracteres"
+      200,
+      "El enlace no puede tener más de 200 caracteres"
     ),
   });
 
 export const userSchema = Yup.object().shape({
   email: Yup.string()
     .email("Ingrese una dirección de correo electrónico válida")
+    .matches(
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+      "Ingrese un correo electrónico con un dominio válido"
+    )
     .required("El correo electrónico es obligatorio"),
   password: Yup.string()
     .min(8, "La contraseña debe tener al menos 8 caracteres")

@@ -23,9 +23,9 @@
 - [x] Connected to Supabase without Prisma
 - [x] Implement date manipulation functionality
 - [x] Implement pagination of events by week
-- [ ] Add form to create events
-- [ ] Add authentication and social login
-- [ ] Add middleware
+- [x] Add form to create events
+- [x] Add authentication and social login
+- [x] Add middleware
 - [ ] Add testing (progressive caching included)
 - [ ] Add event validation functionality
 - [ ] Implement PWA functionality
