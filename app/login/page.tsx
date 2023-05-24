@@ -5,6 +5,9 @@ import { useRouter } from "next/navigation";
 import { useAuthContext } from "../context/auth.context";
 import { userSchema } from "../../utils/utils";
 import { AuthFormErrors } from "@/types/types";
+import { GoogleSignInButton } from "../components/Icons";
+import { setErrorToast, setSuccessToast } from "@/utils/toasts";
+import { ToastContainer } from "react-toastify";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -24,17 +27,14 @@ const Login = () => {
     try {
       await userSchema.validate({ email, password }, { abortEarly: false });
 
-      console.log("handleSignIn", email, password);
       const { data, error } = await supabaseclient.auth.signInWithPassword({
         email,
         password,
       });
       if (error) {
-        console.log("problem signing in");
-        console.log(error.message); // TODO: Manejar el error con Toastify
+        setErrorToast(error.message);
       } else if (data) {
-        // TODO: Manejar éxito con Toastify, añadir loading en PROD
-        console.log("data en handleSignIn", data);
+        setSuccessToast("Inicio de sesión correcto");
         router.replace("/add-event");
       }
     } catch (error: any) {
@@ -63,10 +63,11 @@ const Login = () => {
         options: { data: { role: "user" } },
       });
       if (error) {
-        console.log(error.message); // TODO: Manejar el error con Toastify
+        setErrorToast(error.message);
       } else if (data) {
-        // Manejar éxito con Toastify, "te ha llegado un mail de verificación bla bla"
-        router.replace("/add-event");
+        setSuccessToast("Te has registrado correctamente, revisa tu correo");
+        setEmail(""); // Limpiar el campo de email
+        setPassword(""); // Limpiar el campo de contraseña
       }
     } catch (error: any) {
       // La validación falla, mostrar los errores al usuario
@@ -104,7 +105,7 @@ const Login = () => {
   };
 
   const handleRecoverPassword = () => {
-    router.push("/recover");
+    router.replace("/recover");
   };
 
   return (
@@ -141,28 +142,31 @@ const Login = () => {
               </p>
             )}
           </div>
+
           <div className="flex flex-col">
             <button
               type="button"
-              className="bg-gray-300 text-gray-800 font-bold p-2 px-4 rounded mb-2"
+              className="h-[40px] bg-gray-300 text-gray-800 font-bold p-2 px-4 rounded mb-2"
               onClick={() => handleSignIn()}
             >
               Inicia sesión
             </button>
             <button
-              className="bg-gray-800 text-gray-300 font-bold p-2 px-4 rounded mb-2"
+              className="h-[40px] bg-gray-800 text-gray-300 font-bold p-2 px-4 rounded mb-2"
               type="button"
               onClick={() => handleSignUp()}
             >
-              Registrate
+              Regístrate
             </button>
             <button
               onClick={handleSignInWithGoogle}
-              className="bg-gray-300 text-gray-800 font-bold p-2 px-4 rounded mb-2"
+              className="h-[40px] flex items-center justify-start bg-white text-gray-800 font-bold p-2 px-4 rounded mb-2"
             >
-              Inicia sesión con Google
+              <div className="mr-2">
+                <GoogleSignInButton />
+              </div>
+              <span>Inicia sesión con Google</span>
             </button>
-
             <button
               className="font-bold py-2"
               type="button"
@@ -171,6 +175,7 @@ const Login = () => {
               ¿Olvidaste la contraseña?
             </button>
           </div>
+          <ToastContainer />
         </div>
       </div>
     </div>

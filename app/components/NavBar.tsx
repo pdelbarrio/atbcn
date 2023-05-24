@@ -44,7 +44,9 @@ export default function NavBar() {
 
   return (
     <nav className="bg-gray-500 max-w-xl mx-auto p-2 md:max-w-1/2">
-      <div className="flex flex-col justify-start">
+      <div className="flex flex-col justify-start h-[120px]">
+        {" "}
+        {/* Apply a fixed height */}
         <div className="flex justify-between mx-8 mt-2">
           <div className="flex flex-col">
             <Link href="/" className="font-bold text-gray-800 text-2xl">

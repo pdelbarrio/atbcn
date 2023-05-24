@@ -1,7 +1,7 @@
 import NavBar from "./components/NavBar";
 import "react-datepicker/dist/react-datepicker.css";
 import "./globals.css";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { GlobalContextProvider } from "./context/events.context";
 import { AuthContextProvider } from "./context/auth.context";
