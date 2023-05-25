@@ -26,7 +26,6 @@ export default function RootLayout({
               {children}
             </GlobalContextProvider>
           </AuthContextProvider>
-          <ToastContainer theme="colored" />
         </main>
       </body>
     </html>

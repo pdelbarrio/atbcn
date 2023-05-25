@@ -60,9 +60,8 @@ const AddEvent = () => {
       link,
     });
     setErrors(errors);
-    console.log(errors);
+
     if (Object.keys(errors).length === 0) {
-      console.log("valid");
     }
   };
 
@@ -104,7 +103,7 @@ const AddEvent = () => {
         "https://api.cloudinary.com/v1_1/dl5hp1axh/image/upload",
         formData
       );
-      console.log(response);
+
       if (response.data) {
         setSelectedFile(null);
         setUploadedPoster(response.data.secure_url);
@@ -179,7 +178,7 @@ const AddEvent = () => {
               </span>
             )}
             <span className="block text-right text-gray-400 text-xs">
-              {descriptionLength}/100
+              {descriptionLength}/150
             </span>
           </div>
 

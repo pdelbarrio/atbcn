@@ -86,13 +86,11 @@ const PreviewModal = () => {
   const handleConfirm = async () => {
     try {
       const result = await postEvent();
-      console.log(result); // handle successful result here
-      // setUploadedPoster(null);
+
       setShowModal(false);
 
-      // Mensaje informativo con toaster. Se ha enviado a validación blabla
+      // Mensaje informativo con toaster. Se ha enviado a validación blabla (AUN NO)
     } catch (error) {
-      console.log(error);
       setShowModal(false);
       // handle error here
 
