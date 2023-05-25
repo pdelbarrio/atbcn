@@ -14,7 +14,10 @@ interface Props {
 const EventRow = ({ event }: Props) => {
   const [showModal, setShowModal] = useState<boolean>(false);
 
-  const formattedDateStr = formattedDate(event.date, "PPPPp");
+  const formattedDateStr = formattedDate(
+    event.date,
+    "eeee, dd/MM/yyyy HH:mm'h'"
+  );
 
   const close = () => setShowModal(false);
   const open = () => setShowModal(true);

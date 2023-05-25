@@ -6,6 +6,7 @@ import { useAuthContext } from "../context/auth.context";
 import { userSchema } from "../../utils/utils";
 import { AuthFormErrors } from "@/types/types";
 import { GoogleSignInButton } from "../components/Icons";
+import { CircularProgress } from "@mui/material";
 import { setErrorToast, setSuccessToast } from "@/utils/toasts";
 import { ToastContainer } from "react-toastify";
 
@@ -13,7 +14,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({});
-  const [isValidating, setIsValidating] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
 
   const { supabaseclient } = useAuthContext();
@@ -22,7 +23,7 @@ const Login = () => {
   const handlePasswordChange = (e: any) => setPassword(e.target.value);
 
   const handleSignIn = async () => {
-    setIsValidating(true);
+    setIsLoading(true);
 
     try {
       await userSchema.validate({ email, password }, { abortEarly: false });
@@ -34,8 +35,8 @@ const Login = () => {
       if (error) {
         setErrorToast(error.message);
       } else if (data) {
-        setSuccessToast("Inicio de sesión correcto");
         router.replace("/add-event");
+        setSuccessToast("Inicio de sesión correcto");
       }
     } catch (error: any) {
       // La validación falla, mostrar los errores al usuario
@@ -48,11 +49,11 @@ const Login = () => {
       setErrors(yupErrors);
     }
 
-    setIsValidating(false);
+    setIsLoading(false);
   };
 
   const handleSignUp = async () => {
-    setIsValidating(true);
+    setIsLoading(true);
 
     try {
       await userSchema.validate({ email, password }, { abortEarly: false });
@@ -80,7 +81,7 @@ const Login = () => {
       setErrors(yupErrors);
     }
 
-    setIsValidating(false);
+    setIsLoading(false);
   };
 
   const handleSignInWithGoogle = async () => {
@@ -94,14 +95,14 @@ const Login = () => {
           },
         },
       });
-      console.log("data", data);
+
       if (error) throw new Error(error.message);
       else if (data) {
-        router.replace("/add-event");
       }
-    } catch (error) {
-      console.log(error);
+    } catch (error: any) {
+      setErrorToast(error.message);
     }
+    router.replace("/add-event");
   };
 
   const handleRecoverPassword = () => {

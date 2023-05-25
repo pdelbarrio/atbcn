@@ -20,8 +20,6 @@ const Recover = () => {
   const handleEmailChange = (e: any) => setEmail(e.target.value);
 
   const recoverPassword = async () => {
-    console.log("se dispara el recoverPassword?");
-    console.log(email);
     setErrorToast(
       "Reseteo temporalmente inhabilitado, pide reseteo manual enviando mail a atbcnapp@gmail.com"
     );
@@ -34,11 +32,9 @@ const Recover = () => {
           redirectTo: "https://localhost:3000/update-user",
         }
       );
-      console.log("data", data);
-      console.log("error", error);
+
       //TODO: Manejar success con toastify "Si el correo se encuentra en la base de datos recibirás un mail con un enlace para resetear la contraseña"
       if (error) {
-        console.log(error.message); // TODO: Manejar el error con Toastify
         setErrorToast(error.message);
       } else if (data) {
         setSuccessToast(
@@ -61,35 +57,37 @@ const Recover = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <div className="w-full max-w-sm">
-        <p className="text-xs  text-gray-800 font-bold mb-4">
-          Recibirás un email para restablecer tu contraseña
-        </p>
-        <div className="mb-4">
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="email"
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={handleEmailChange}
-          />
-          {(errors as AuthFormErrors).email && (
-            <p className="text-red-500 text-xs italic font-bold">
-              {(errors as AuthFormErrors).email}
-            </p>
-          )}
-        </div>
+        <div className="px-8 pb-8 mb-4">
+          <p className="text-xs  text-gray-800 font-bold mb-4">
+            Recibirás un email para restablecer tu contraseña
+          </p>
+          <div className="mb-4">
+            <input
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="email"
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={handleEmailChange}
+            />
+            {(errors as AuthFormErrors).email && (
+              <p className="text-red-500 text-xs italic font-bold">
+                {(errors as AuthFormErrors).email}
+              </p>
+            )}
+          </div>
 
-        <div className="flex flex-col">
-          <button
-            type="button"
-            className="bg-gray-800 text-gray-300 font-bold p-2 px-4 rounded mb-2"
-            onClick={() => recoverPassword()}
-          >
-            Send
-          </button>
+          <div className="flex flex-col">
+            <button
+              type="button"
+              className="bg-gray-800 text-gray-300 font-bold p-2 px-4 rounded mb-2"
+              onClick={() => recoverPassword()}
+            >
+              Send
+            </button>
+          </div>
+          <ToastContainer />
         </div>
-        <ToastContainer />
       </div>
     </div>
   );

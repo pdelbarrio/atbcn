@@ -16,25 +16,18 @@ export default function NavBar() {
     const { error } = await supabaseclient.auth.signOut();
     if (error) throw new Error("Error durante el cierre de sesión");
     router.refresh();
-    console.log("refreshing?", router);
-    console.log("signOutButton", signOutButton);
   };
 
   useEffect(() => {
     const {
       data: { subscription },
     } = supabaseclient.auth.onAuthStateChange((event: any, session: any) => {
-      console.log("session from NavBar", session);
       if (session) {
         setSignOutButton(true);
         router.refresh();
-
-        console.log("signOutButton", signOutButton);
       } else {
         setSignOutButton(false);
         router.refresh();
-
-        console.log("signOutButton", signOutButton);
       }
     });
     return () => {
@@ -45,8 +38,6 @@ export default function NavBar() {
   return (
     <nav className="bg-gray-500 max-w-xl mx-auto p-2 md:max-w-1/2">
       <div className="flex flex-col justify-start h-[120px]">
-        {" "}
-        {/* Apply a fixed height */}
         <div className="flex justify-between mx-8 mt-2">
           <div className="flex flex-col">
             <Link href="/" className="font-bold text-gray-800 text-2xl">
