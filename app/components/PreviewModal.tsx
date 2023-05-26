@@ -177,7 +177,7 @@ const PreviewModal = () => {
 
                     <p className="ml-2 text-gray-700 text-sm">
                       <a href={previewEvent.link} target="_blank">
-                        Link of the event
+                        Link del evento
                       </a>
                     </p>
                   </div>
