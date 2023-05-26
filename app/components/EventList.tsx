@@ -13,8 +13,8 @@ interface Props {
 
 export default function EventList({ events }: Props) {
   const [currentWeek, setCurrentWeek] = useState(new Date());
-  const currentWeekStart = startOfWeek(currentWeek);
-  const currentWeekEnd = endOfWeek(currentWeek);
+  const currentWeekStart = startOfWeek(currentWeek, { weekStartsOn: 1 });
+  const currentWeekEnd = endOfWeek(currentWeek, { weekStartsOn: 1 });
 
   const eventsThisWeek = events.filter((event: EventType) => {
     const eventDate = new Date(event.date);
@@ -22,7 +22,8 @@ export default function EventList({ events }: Props) {
   });
 
   const isFirstWeek =
-    currentWeekStart.getTime() === startOfWeek(new Date()).getTime();
+    currentWeekStart.getTime() ===
+    startOfWeek(new Date(), { weekStartsOn: 1 }).getTime();
 
   const nextWeek = () => {
     setCurrentWeek(addWeeks(currentWeek, 1));

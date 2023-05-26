@@ -99,7 +99,7 @@ const EventModal = ({ setShowModal, event }: Props) => {
 
                 <p className="ml-2 text-gray-700 text-sm">
                   <a href={event.link} target="_blank">
-                    Link of the event
+                    Link del evento
                   </a>
                 </p>
               </div>
