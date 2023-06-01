@@ -14,9 +14,22 @@ export default function NavBar() {
 
   const handleSignout = async () => {
     const { error } = await supabaseclient.auth.signOut();
-    router.refresh();
+    router.push("/");
     if (error) throw new Error("Error durante el cierre de sesión");
-    router.refresh();
+    router.push("/");
+  };
+
+  const handleRedirect = () => {
+    const {
+      data: { subscription },
+    } = supabaseclient.auth.onAuthStateChange((event: any, session: any) => {
+      if (session) {
+        router.push("/add-event");
+      } else {
+        setSignOutButton(false);
+        router.push("/login");
+      }
+    });
   };
 
   useEffect(() => {
@@ -46,12 +59,18 @@ export default function NavBar() {
             </Link>
           </div>
           <div className="flex flex-col">
-            <Link
+            {/* <Link
               href="/add-event"
               className="bg-gray-300 text-gray-800 font-bold p-2 px-4 rounded-lg text-lg flex-grow"
             >
               add event
-            </Link>
+            </Link> */}
+            <button
+              onClick={handleRedirect}
+              className="bg-gray-300 text-gray-800 font-bold p-2 px-4 rounded-lg text-lg flex-grow"
+            >
+              add event
+            </button>
             {signOutButton && (
               <button
                 onClick={handleSignout}
