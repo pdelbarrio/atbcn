@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, useState } from "react";
-import { createBrowserSupabaseClient } from "@supabase/auth-helpers-nextjs";
+import { createPagesBrowserClient } from "@supabase/auth-helpers-nextjs";
 import { AuthContextType } from "@/types/types";
 
 const AuthContext = createContext({} as AuthContextType);
@@ -11,7 +11,7 @@ interface props {
 }
 
 export const AuthContextProvider = ({ children }: props) => {
-  const [supabaseclient] = useState(() => createBrowserSupabaseClient());
+  const [supabaseclient] = useState(() => createPagesBrowserClient());
 
   return (
     <AuthContext.Provider
