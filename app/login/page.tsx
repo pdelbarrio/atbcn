@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { redirect } from "next/navigation";
 import { useAuthContext } from "../context/auth.context";
 import { userSchema } from "../../utils/utils";
 import { AuthFormErrors } from "@/types/types";
@@ -15,7 +15,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({});
   const [isLoading, setIsLoading] = useState(false);
-  const router = useRouter();
+  // const router = useRouter();
 
   const { supabaseclient } = useAuthContext();
 
@@ -35,8 +35,8 @@ const Login = () => {
       if (error) {
         setErrorToast(error.message);
       } else if (data) {
-        router.replace("/add-event");
         setSuccessToast("Inicio de sesión correcto");
+        redirect("/add-event");
       }
     } catch (error: any) {
       // La validación falla, mostrar los errores al usuario
@@ -102,11 +102,11 @@ const Login = () => {
     } catch (error: any) {
       setErrorToast(error.message);
     }
-    router.replace("/add-event");
+    redirect("/add-event");
   };
 
   const handleRecoverPassword = () => {
-    router.replace("/recover");
+    redirect("/recover");
   };
 
   return (

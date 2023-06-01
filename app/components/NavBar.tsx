@@ -14,6 +14,7 @@ export default function NavBar() {
 
   const handleSignout = async () => {
     const { error } = await supabaseclient.auth.signOut();
+    router.refresh();
     if (error) throw new Error("Error durante el cierre de sesión");
     router.refresh();
   };
