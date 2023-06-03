@@ -5,9 +5,13 @@ import Link from "next/link";
 import { useAuthContext } from "../context/auth.context";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { InfoButton } from "./Icons";
+import { AnimatePresence } from "framer-motion";
+import ModalInfo from "./ModalInfo";
 
 export default function NavBar() {
   const [signOutButton, setSignOutButton] = useState(false);
+  const [showModal, setShowModal] = useState<boolean>(false);
   const { supabaseclient } = useAuthContext();
 
   const router = useRouter();
@@ -58,13 +62,12 @@ export default function NavBar() {
               @bcn
             </Link>
           </div>
+          <div>
+            <button onClick={() => setShowModal(!showModal)}>
+              <InfoButton />
+            </button>
+          </div>
           <div className="flex flex-col">
-            {/* <Link
-              href="/add-event"
-              className="bg-gray-300 text-gray-800 font-bold p-2 px-4 rounded-lg text-lg flex-grow"
-            >
-              add event
-            </Link> */}
             <button
               onClick={handleRedirect}
               className="bg-gray-300 text-gray-800 font-bold p-2 px-4 rounded-lg text-lg flex-grow"
@@ -82,6 +85,9 @@ export default function NavBar() {
           </div>
         </div>
       </div>
+      <AnimatePresence initial={false} mode="wait" onExitComplete={() => null}>
+        {showModal && <ModalInfo setShowModal={setShowModal} />}
+      </AnimatePresence>
     </nav>
   );
 }
