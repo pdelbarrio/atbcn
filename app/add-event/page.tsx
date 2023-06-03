@@ -9,6 +9,7 @@ import { eventSchema } from "@/utils/utils";
 import PreviewModal from "../components/PreviewModal";
 import { EventFormType, EventFormErrors } from "@/types/types";
 import { useGlobalContext } from "../context/events.context";
+// import { useFileUpload } from "../hooks/useFileUpload";
 
 const AddEvent = () => {
   const [name, setName] = useState("");
@@ -22,6 +23,7 @@ const AddEvent = () => {
   const [displayFile, setDisplayFile] = useState(null);
   const [errors, setErrors] = useState({});
   const [descriptionLength, setDescriptionLength] = useState(0);
+  // const { onSubmitFile } = useFileUpload();
 
   const {
     setPreviewEvent,

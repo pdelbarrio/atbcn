@@ -27,7 +27,7 @@
 - [x] Add authentication and social login
 - [x] Add middleware
 - [ ] Add testing (progressive caching included)
-- [ ] Add event validation functionality
+- [ ] Add event validation functionality (not yet)
 - [ ] Implement PWA functionality
 - [ ] Implement dark mode
 
