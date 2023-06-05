@@ -26,10 +26,10 @@ export const metadata: Metadata = {
   themeColor: "#757b8a",
   viewport:
     "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
-  manifest: "../public/manifest.json",
+  manifest: "/manifest.json",
   icons: [
-    { rel: "apple-touch-icon", url: "../public/apple-touch-icon.png" },
-    { rel: "shortcut icon", url: "../public/favicon.ico" },
+    { rel: "apple-touch-icon", url: "/icons/apple-touch-icon.png" },
+    { rel: "shortcut icon", url: "/favicon.ico" },
   ],
   keywords: ["bcn", "barcelona", "eventos", "conciertos", "agenda"],
 };
