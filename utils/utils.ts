@@ -12,10 +12,10 @@ export const eventSchema = Yup.object()
   .shape({
     name: Yup.string()
       .required("El nombre del evento es obligatorio")
-      .max(35, "El nombre no puede tener más de 35 caracteres"),
+      .max(50, "El nombre no puede tener más de 50 caracteres"),
     description: Yup.string().max(
       150,
-      "La descripción no puede tener más de 100 caracteres"
+      "La descripción no puede tener más de 150 caracteres"
     ),
     tags: Yup.array()
       .max(3, "No se pueden agregar más de 3 tags")
