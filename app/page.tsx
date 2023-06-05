@@ -4,7 +4,7 @@ import { EventType } from "@/types/types";
 import { Metadata } from "next";
 
 const APP_NAME = "@bcn";
-const APP_DESCRIPTION = "Encuentra y añade eventos de Barcelona";
+const APP_DESCRIPTION = "Encuentra y añade eventos culturales de Barcelona";
 
 export const metadata: Metadata = {
   title: APP_NAME,
