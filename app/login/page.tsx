@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { redirect } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 import { useAuthContext } from "../context/auth.context";
 import { userSchema } from "../../utils/utils";
 import { AuthFormErrors } from "@/types/types";
@@ -15,7 +15,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({});
   const [isLoading, setIsLoading] = useState(false);
-  // const router = useRouter();
+  const router = useRouter();
 
   const { supabaseclient } = useAuthContext();
 
@@ -102,7 +102,8 @@ const Login = () => {
     } catch (error: any) {
       setErrorToast(error.message);
     }
-    redirect("/add-event");
+    // redirect("/add-event");
+    router.push("/add-event");
   };
 
   const handleRecoverPassword = () => {
