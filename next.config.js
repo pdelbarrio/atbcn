@@ -3,6 +3,12 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-}
+};
 
-module.exports = nextConfig
+const withPWA = require("@imbios/next-pwa")({
+  dest: "public",
+});
+
+module.exports = withPWA({});
+
+module.exports = nextConfig;
