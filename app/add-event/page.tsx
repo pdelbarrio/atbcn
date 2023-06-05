@@ -23,6 +23,7 @@ const AddEvent = () => {
   const [displayFile, setDisplayFile] = useState(null);
   const [errors, setErrors] = useState({});
   const [descriptionLength, setDescriptionLength] = useState(0);
+  const [nameLength, setNameLength] = useState(0);
   // const { onSubmitFile } = useFileUpload();
 
   const {
@@ -154,13 +155,19 @@ const AddEvent = () => {
               id="name"
               className="w-full border border-gray-400 p-2 rounded-md"
               value={name}
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) => {
+                setName(e.target.value);
+                setNameLength(e.target.value.length);
+              }}
             />
             {(errors as EventFormErrors).name && (
               <span className="text-red-500 font-bold italic text-xs">
                 {(errors as EventFormErrors).name}
               </span>
             )}
+            <span className="block text-right text-gray-400 text-xs">
+              {nameLength}/50
+            </span>
           </div>
 
           <div className="mb-4">
