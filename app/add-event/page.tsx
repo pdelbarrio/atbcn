@@ -1,6 +1,6 @@
 "use client";
 
-import { SetStateAction, useState } from "react";
+import { SetStateAction, useEffect, useState } from "react";
 import DatePicker from "react-datepicker";
 import Axios from "axios";
 
@@ -9,6 +9,7 @@ import { eventSchema } from "@/utils/utils";
 import PreviewModal from "../components/PreviewModal";
 import { EventFormType, EventFormErrors } from "@/types/types";
 import { useGlobalContext } from "../context/events.context";
+import { useAuthContext } from "../context/auth.context";
 // import { useFileUpload } from "../hooks/useFileUpload";
 
 const AddEvent = () => {
@@ -24,6 +25,8 @@ const AddEvent = () => {
   const [errors, setErrors] = useState({});
   const [descriptionLength, setDescriptionLength] = useState(0);
   const [nameLength, setNameLength] = useState(0);
+  const [createdBy, setCreatedBy] = useState<string | undefined>(undefined);
+
   // const { onSubmitFile } = useFileUpload();
 
   const {
@@ -35,6 +38,28 @@ const AddEvent = () => {
     tags,
     setTags,
   } = useGlobalContext();
+
+  const { supabaseclient } = useAuthContext();
+
+  useEffect(() => {
+    async function fetchSession() {
+      const { data: session, error } = await supabaseclient.auth.getSession();
+
+      if (error) {
+        console.log("Error fetching session:", error.message);
+        return;
+      }
+
+      if (session) {
+        console.log("Session:", session.session?.user.email);
+        setCreatedBy(session.session?.user.email);
+      } else {
+        console.log("No session");
+      }
+    }
+
+    fetchSession();
+  }, []);
 
   const openModal = () => {
     setShowModal(true);
@@ -48,6 +73,7 @@ const AddEvent = () => {
       date: formattedDate,
       link: link,
       poster: uploadedPoster,
+      created_by: createdBy,
     };
     setPreviewEvent(eventDetails);
   };

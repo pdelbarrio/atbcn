@@ -25,9 +25,9 @@ export interface PreviewEventType {
   poster: string | null;
   tags: string[] | null;
   date: string | null;
+  created_by: string | null | undefined;
   // completed: boolean;
   // created_at: string;
-  // created_by: number | null;
 }
 
 export interface EventContextType {
