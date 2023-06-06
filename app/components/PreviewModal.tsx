@@ -61,6 +61,7 @@ const PreviewModal = () => {
           description: previewEvent?.description,
           poster: uploadedPoster,
           link: previewEvent?.link,
+          created_by: previewEvent?.created_by,
           validated: true, //FIXME: Temporalmente a true solo en desarrollo
           completed: false,
         },
