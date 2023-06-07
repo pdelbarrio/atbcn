@@ -70,14 +70,14 @@ export default function NavBar() {
           <div className="flex flex-col">
             <button
               onClick={handleRedirect}
-              className="bg-gray-300 text-gray-800 font-bold  px-4 rounded-lg text-lg h-[36px]"
+              className="bg-gray-300 text-gray-800 font-bold px-4 py-1 rounded-lg text-lg"
             >
               add event
             </button>
             {signOutButton && (
               <button
                 onClick={handleSignout}
-                className="bg-black text-white text-xs p-2 px-2 mt-2 rounded-lg flex-grow"
+                className="bg-black text-white text-xs p-2 px-2 mt-2 rounded-lg"
               >
                 SIGN OUT
               </button>
