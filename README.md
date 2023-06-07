@@ -27,11 +27,12 @@
 - [x] Add authentication and social login
 - [x] Add middleware
 - [ ] Add testing 
-- [ ] Add event validation functionality (not yet)
+
 
 ## backlog
 - [ ] Implement PWA functionality
 - [ ] Implement dark mode
+- [ ] Add event validation functionality
 
 ### Figma prototype
 
