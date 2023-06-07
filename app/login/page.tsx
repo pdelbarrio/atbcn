@@ -53,7 +53,15 @@ const Login = () => {
 
   const handleSignUp = async () => {
     setIsLoading(true);
+    const { data, error } = await supabaseclient.from("auth.users").select("*");
 
+    if (error) {
+      console.log(error.message);
+    } else if (data.length > 0) {
+      console.log("Email already registered");
+    } else {
+      console.log("Email not registered");
+    }
     try {
       await userSchema.validate({ email, password }, { abortEarly: false });
       // La validación es exitosa, continuar con el registro
@@ -62,6 +70,7 @@ const Login = () => {
         password,
         options: { data: { role: "user" } },
       });
+      console.log(data);
       if (error) {
         setErrorToast(error.message);
       } else if (data) {
@@ -72,14 +81,11 @@ const Login = () => {
     } catch (error: any) {
       // La validación falla, mostrar los errores al usuario
       const yupErrors: AuthFormErrors = {};
-
       error.inner.forEach((validationError: any) => {
         yupErrors[validationError.path] = validationError.message;
       });
-
       setErrors(yupErrors);
     }
-
     setIsLoading(false);
   };
 
@@ -106,7 +112,7 @@ const Login = () => {
   };
 
   const handleRecoverPassword = () => {
-    redirect("/recover");
+    router.push("/recover");
   };
 
   return (

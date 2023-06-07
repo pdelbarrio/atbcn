@@ -20,9 +20,9 @@ const Recover = () => {
   const handleEmailChange = (e: any) => setEmail(e.target.value);
 
   const recoverPassword = async () => {
-    setErrorToast(
-      "Reseteo temporalmente inhabilitado, pide reseteo manual enviando mail a atbcnapp@gmail.com"
-    );
+    // setErrorToast(
+    //   "Reseteo temporalmente inhabilitado, pide reseteo manual enviando mail a atbcnapp@gmail.com"
+    // );
     try {
       await userSchema.validate({ email }, { abortEarly: false });
 

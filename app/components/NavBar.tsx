@@ -70,7 +70,7 @@ export default function NavBar() {
           <div className="flex flex-col">
             <button
               onClick={handleRedirect}
-              className="bg-gray-300 text-gray-800 font-bold p-2 px-4 rounded-lg text-lg flex-grow"
+              className="bg-gray-300 text-gray-800 font-bold  px-4 rounded-lg text-lg h-[36px]"
             >
               add event
             </button>
