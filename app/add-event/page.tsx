@@ -10,7 +10,8 @@ import PreviewModal from "../components/PreviewModal";
 import { EventFormType, EventFormErrors } from "@/types/types";
 import { useGlobalContext } from "../context/events.context";
 import { useAuthContext } from "../context/auth.context";
-// import { useFileUpload } from "../hooks/useFileUpload";
+import { ToastContainer } from "react-toastify";
+import { setErrorToast, setSuccessToast } from "@/utils/toasts";
 
 const AddEvent = () => {
   const [name, setName] = useState("");
@@ -25,9 +26,7 @@ const AddEvent = () => {
   const [errors, setErrors] = useState({});
   const [descriptionLength, setDescriptionLength] = useState(0);
   const [nameLength, setNameLength] = useState(0);
-  const [createdBy, setCreatedBy] = useState<string | undefined>(undefined);
-
-  // const { onSubmitFile } = useFileUpload();
+  const [bannedUsers, setBannedUsers] = useState([]);
 
   const {
     setPreviewEvent,
@@ -37,9 +36,30 @@ const AddEvent = () => {
     setUploadedPoster,
     tags,
     setTags,
+    supabase,
+    setCreatedBy,
+    createdBy,
   } = useGlobalContext();
 
   const { supabaseclient } = useAuthContext();
+
+  useEffect(() => {
+    const fetchBannedUsers = async () => {
+      try {
+        const { data, error } = await supabase.from("banned_users").select("*");
+        if (error) {
+          throw new Error(error.message);
+        }
+        // Process the fetched data here
+        setBannedUsers(data);
+        console.log(data);
+      } catch (error) {
+        console.error("Error fetching banned users:", error);
+      }
+    };
+
+    fetchBannedUsers();
+  }, []);
 
   useEffect(() => {
     async function fetchSession() {
@@ -52,7 +72,7 @@ const AddEvent = () => {
 
       if (session) {
         console.log("Session:", session.session?.user.email);
-        setCreatedBy(session.session?.user.email);
+        setCreatedBy(session.session?.user.email || null);
       } else {
         console.log("No session");
       }
@@ -62,6 +82,16 @@ const AddEvent = () => {
   }, []);
 
   const openModal = () => {
+    const reasonIsBanned = isBannedUser(bannedUsers, createdBy);
+
+    if (reasonIsBanned) {
+      // El usuario está baneado
+      setErrorToast(
+        `ESTÁS BANEADO\nRazón: ${reasonIsBanned}. Contacta con atbcnapp@gmail.com`
+      );
+      return;
+    }
+
     setShowModal(true);
     const formattedDate = date ? date.toISOString() : null;
     const eventDetails = {
@@ -77,6 +107,15 @@ const AddEvent = () => {
     };
     setPreviewEvent(eventDetails);
   };
+
+  function isBannedUser(bannedUsers: any, createdBy: any) {
+    for (let i = 0; i < bannedUsers.length; i++) {
+      if (bannedUsers[i].mail === createdBy) {
+        return bannedUsers[i].reason; // El usuario está baneado por este motivo
+      }
+    }
+    return false; // El usuario no está baneado
+  }
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -376,6 +415,7 @@ const AddEvent = () => {
             </button>
           </div>
         </form>
+        <ToastContainer />
       </div>
       <AnimatePresence initial={false} mode="wait" onExitComplete={() => null}>
         {showModal && Object.keys(errors).length === 0 && <PreviewModal />}

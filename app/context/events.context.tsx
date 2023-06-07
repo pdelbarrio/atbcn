@@ -21,6 +21,7 @@ export const GlobalContextProvider = ({ children }: props) => {
   const [uploadedPoster, setUploadedPoster] = useState<string | null>(null);
   const [tags, setTags] = useState<string[]>([]);
   const [supabase] = useState(() => createClient(supabaseUrl, supabaseAnonKey));
+  const [createdBy, setCreatedBy] = useState<string | null>(null);
 
   return (
     <GlobalContext.Provider
@@ -34,6 +35,8 @@ export const GlobalContextProvider = ({ children }: props) => {
         tags,
         setTags,
         supabase,
+        setCreatedBy,
+        createdBy,
       }}
     >
       {children}

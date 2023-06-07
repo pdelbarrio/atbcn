@@ -7,6 +7,7 @@ import { useGlobalContext } from "../context/events.context";
 import { useRouter } from "next/navigation";
 
 import { formattedDate } from "@/utils/utils";
+import { ToastContainer } from "react-toastify";
 import { setErrorToast, setSuccessToast } from "@/utils/toasts";
 
 const dropIn = {
@@ -199,6 +200,7 @@ const PreviewModal = () => {
                   Confirmar
                 </button>
               </div>
+              <ToastContainer />
             </div>
           </motion.div>
         </motion.div>
