@@ -6,7 +6,6 @@ import { useAuthContext } from "../context/auth.context";
 import { userSchema } from "../../utils/utils";
 import { AuthFormErrors } from "@/types/types";
 import { GoogleSignInButton } from "../components/Icons";
-import { CircularProgress } from "@mui/material";
 import { setErrorToast, setSuccessToast } from "@/utils/toasts";
 import { ToastContainer } from "react-toastify";
 

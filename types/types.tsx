@@ -42,6 +42,8 @@ export interface EventContextType {
   tags: string[];
   setTags: React.Dispatch<React.SetStateAction<string[]>>;
   supabase: any;
+  setCreatedBy: React.Dispatch<React.SetStateAction<string | null>>;
+  createdBy: string | null;
 }
 
 export interface EventFormType {
@@ -71,4 +73,9 @@ export interface AuthFormErrors {
   email?: string;
   password?: string;
   [key: string]: string | undefined;
+}
+
+export interface BannedUserType {
+  id: number;
+  mai: string;
 }
