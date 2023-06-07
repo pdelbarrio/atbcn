@@ -53,15 +53,7 @@ const Login = () => {
 
   const handleSignUp = async () => {
     setIsLoading(true);
-    const { data, error } = await supabaseclient.from("auth.users").select("*");
 
-    if (error) {
-      console.log(error.message);
-    } else if (data.length > 0) {
-      console.log("Email already registered");
-    } else {
-      console.log("Email not registered");
-    }
     try {
       await userSchema.validate({ email, password }, { abortEarly: false });
       // La validación es exitosa, continuar con el registro
