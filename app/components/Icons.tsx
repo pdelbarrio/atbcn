@@ -272,8 +272,8 @@ export const GoogleSignInButton = () => (
 
 export const InfoButton = () => (
   <svg
-    width="46px"
-    height="46px"
+    width="36px"
+    height="36px"
     version="1.1"
     viewBox="0 0 700 700"
     fill="#D1D5DB"

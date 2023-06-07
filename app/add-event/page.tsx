@@ -52,7 +52,7 @@ const AddEvent = () => {
         }
         // Process the fetched data here
         setBannedUsers(data);
-        console.log(data);
+ 
       } catch (error) {
         console.error("Error fetching banned users:", error);
       }
@@ -71,7 +71,7 @@ const AddEvent = () => {
       }
 
       if (session) {
-        console.log("Session:", session.session?.user.email);
+   
         setCreatedBy(session.session?.user.email || null);
       } else {
         console.log("No session");
