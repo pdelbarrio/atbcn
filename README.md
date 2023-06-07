@@ -28,6 +28,8 @@
 - [x] Add middleware
 - [ ] Add testing 
 - [ ] Add event validation functionality (not yet)
+
+## backlog
 - [ ] Implement PWA functionality
 - [ ] Implement dark mode
 
