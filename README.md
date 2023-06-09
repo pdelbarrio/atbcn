@@ -26,10 +26,16 @@
 - [x] Add form to create events
 - [x] Add authentication and social login
 - [x] Add middleware
-- [ ] Add testing (progressive caching included)
-- [ ] Add event validation functionality (not yet)
+- [x] Restriction of event insertion to users based on their e-mail address
+- [ ] Add testing 
+
+
+## backlog
+- [ ] Add possibility to display events of several days (2 or more)
 - [ ] Implement PWA functionality
 - [ ] Implement dark mode
+- [ ] Implement administrator interface for editing events, banned users, etc.
+
 
 ### Figma prototype
 
