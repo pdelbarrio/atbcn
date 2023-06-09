@@ -52,7 +52,6 @@ const AddEvent = () => {
         }
         // Process the fetched data here
         setBannedUsers(data);
- 
       } catch (error) {
         console.error("Error fetching banned users:", error);
       }
@@ -71,13 +70,11 @@ const AddEvent = () => {
       }
 
       if (session) {
-   
         setCreatedBy(session.session?.user.email || null);
       } else {
         console.log("No session");
       }
     }
-
     fetchSession();
   }, []);
 
@@ -92,7 +89,7 @@ const AddEvent = () => {
       return;
     }
 
-    setShowModal(true);
+    // setShowModal(true);
     const formattedDate = date ? date.toISOString() : null;
     const eventDetails = {
       name: name,
@@ -130,6 +127,9 @@ const AddEvent = () => {
     setErrors(errors);
 
     if (Object.keys(errors).length === 0) {
+      setShowModal(true);
+    } else {
+      setShowModal(false);
     }
   };
 
