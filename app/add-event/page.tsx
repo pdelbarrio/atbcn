@@ -3,7 +3,7 @@
 import { SetStateAction, useEffect, useState } from "react";
 import DatePicker from "react-datepicker";
 import Axios from "axios";
-
+import { es } from "date-fns/locale";
 import { AnimatePresence } from "framer-motion";
 import { eventSchema } from "@/utils/utils";
 import PreviewModal from "../components/PreviewModal";
@@ -337,6 +337,8 @@ const AddEvent = () => {
                 timeFormat="HH:mm"
                 timeIntervals={15}
                 dateFormat="dd/MM/yy HH:mm"
+                locale={es}
+                placeholderText="Seleccionar fecha"
               />
             </div>
           </div>
