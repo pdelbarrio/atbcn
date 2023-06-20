@@ -46,9 +46,9 @@ const ModalInfo = ({ setShowModal }: Props) => {
           Bienvenid@ a <span className="font-bold"> atbcn</span>. Agenda de
           eventos culturales de Barcelona. Aquí podrás ver información de
           eventos culturales en Barcelona y cercanías. Si quieres añadir eventos
-          tendrás que registrarte. Que sean eventos alternativos,
-          contraculturales, experimentales, etc. Ya sabes. Si tienes cualquier
-          duda, problema o sugerencia puedes escribir a
+          tendrás que registrarte (si usas gmail es muy sencillo). Que sean
+          eventos alternativos, contraculturales, experimentales, etc. Ya sabes.
+          Si tienes cualquier duda, problema o sugerencia puedes escribir a
           <span className="font-bold"> atbcnapp@gmail.com</span>
         </div>
       </motion.div>
