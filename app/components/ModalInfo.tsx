@@ -48,9 +48,11 @@ const ModalInfo = ({ setShowModal }: Props) => {
           información de eventos culturales en Barcelona y cercanías.
           <br />
           <br />
-          Para empezar, regístrate (es muy sencillo si usas Gmail) y comparte
-          tus propios eventos. Que sean eventos alternativos, contraculturales,
-          experimentales, etc. Ya sabes.
+          Puedes ver info de los eventos a partir de la semana actual. Verás los
+          eventos apilados, si quieres ver más info clica encima del evento que
+          te interese. Si quieres añadir un evento tendrás que registrarte (es
+          muy sencillo si usas Gmail). Que sean eventos alternativos,
+          contraculturales, experimentales, etc. Ya sabes.
           <br />
           <br />
           Al introducir un evento, ten en cuenta que algunos campos del
