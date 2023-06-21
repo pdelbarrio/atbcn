@@ -25,7 +25,7 @@ const EventRow = ({ event }: Props) => {
   return (
     <div
       onClick={() => (showModal ? close() : open())}
-      className="bg-gray-300 rounded-lg shadow-lg overflow-hidden mb-3"
+      className="bg-gray-300 rounded-lg shadow-lg overflow-hidden mb-3 cursor-pointer touch:bg-gray-500"
     >
       <div className="flex">
         <div className="w-3/4 p-4">
