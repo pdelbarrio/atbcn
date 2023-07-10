@@ -3,6 +3,33 @@ import EventList from "./components/EventList";
 import { EventType } from "@/types/types";
 import { Metadata } from "next";
 
+export const revalidate = 60;
+
+async function getData(): Promise<EventType[]> {
+  const currentDate = new Date();
+  const { data: events } = await supabase
+    .from("events")
+    .select("*")
+    .gt("date", currentDate.toISOString())
+    .order("date", { ascending: true });
+
+  if (events === null) {
+    return [];
+  }
+
+  return events;
+}
+
+export default async function Home() {
+  const events = await getData();
+
+  return (
+    <div className="max-w-screen-sm mx-auto px-4">
+      <EventList events={events} />
+    </div>
+  );
+}
+
 const APP_NAME = "@bcn";
 const APP_DESCRIPTION = "Encuentra y añade eventos culturales de Barcelona";
 
@@ -33,30 +60,3 @@ export const metadata: Metadata = {
   ],
   keywords: ["bcn", "barcelona", "eventos", "conciertos", "agenda"],
 };
-
-export const revalidate = 60;
-
-async function getData(): Promise<EventType[]> {
-  const currentDate = new Date();
-  const { data: events } = await supabase
-    .from("events")
-    .select("*")
-    .gt("date", currentDate.toISOString())
-    .order("date", { ascending: true });
-
-  if (events === null) {
-    return [];
-  }
-
-  return events;
-}
-
-export default async function Home() {
-  const events = await getData();
-
-  return (
-    <div className="max-w-screen-sm mx-auto px-4">
-      <EventList events={events} />
-    </div>
-  );
-}
