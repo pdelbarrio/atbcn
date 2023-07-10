@@ -6,7 +6,7 @@ La aplicación para estar al día de los eventos locales.
 
 [atbcn.info](https://www.atbcn.info/)
 
-![Captura de pantalla de la interfaz de usuario](https://res.cloudinary.com/getoutbcn/image/upload/v1686765051/portfolio/projects/atbcnmockup_a4mi86.png)
+![Captura de pantalla de la interfaz de usuario](https://res.cloudinary.com/getoutbcn/image/upload/v1689003157/portfolio/imagenRM_otrawy.jpg)
 
 ## Características clave
 
