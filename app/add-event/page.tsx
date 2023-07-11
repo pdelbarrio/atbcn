@@ -212,7 +212,7 @@ const AddEvent = () => {
   return (
     <div className="flex items-center justify-center">
       <div className="w-full max-w-md">
-        <form onSubmit={handleSubmit} className="bg-gray-500 p-8 rounded-md">
+        <form onSubmit={handleSubmit} className="bg-gray-500 p-8 rounded-md dark:bg-black dark:border dark:border-glow">
           <div className="mb-4">
             <input
               type="text"
@@ -262,12 +262,12 @@ const AddEvent = () => {
                 {tags?.map((tag, index) => (
                   <li
                     key={index}
-                    className="inline-flex items-center justify-center h-8 px-3 text-sm font-medium text-white bg-gray-800 rounded-md mr-2 mb-2"
+                    className="inline-flex items-center justify-center h-8 px-3 text-sm font-medium text-white dark:text-glow dark:border dark:border-glow bg-gray-800 dark:bg-black rounded-md mr-2 mb-2"
                   >
                     <span className="mb-1">{tag}</span>
                     <span
                       onClick={() => deleteTag(index)}
-                      className="block w-4 h-4 leading-4 text-center text-sm text-gray-800 bg-white rounded-full cursor-pointer ml-2"
+                      className="block w-4 h-4 leading-4 text-center text-xs text-gray-800 bg-white dark:text-glow dark:bg-black dark:border dark:border-glow rounded-full cursor-pointer ml-2"
                     >
                       X
                     </span>
@@ -283,7 +283,7 @@ const AddEvent = () => {
               />
               <button
                 onClick={handleAddTag}
-                className="bg-gray-300 text-gray-800 font-bold p-2 px-4 rounded ml-auto mb-2"
+                className="bg-gray-300 dark:bg-glow text-gray-800 font-bold p-2 px-4 rounded ml-auto mb-2"
               >
                 Agregar tag
               </button>
@@ -397,7 +397,7 @@ const AddEvent = () => {
                 )}
                 {uploadedPoster ? null : (
                   <button
-                    className="bg-gray-300 text-gray-800 font-bold mt-2 mb-2 p-2 px-4 rounded"
+                    className="bg-gray-300 dark:bg-glow text-gray-800 font-bold mt-2 mb-2 p-2 px-4 rounded"
                     onClick={() => onSubmitFile(selectedFile)}
                   >
                     Upload
@@ -407,10 +407,11 @@ const AddEvent = () => {
             </div>
           </div>
 
-          <div className="mt-8">
+          <div className="mt-8 flex justify-between">
+            <div></div>
             <button
               type="submit"
-              className="bg-gray-300 text-gray-800 font-bold p-2 px-4 rounded"
+              className="bg-gray-300 dark:bg-glow text-gray-800 font-bold p-2 px-4 rounded"
               onClick={openModal}
             >
               Preview

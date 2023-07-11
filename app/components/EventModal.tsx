@@ -49,17 +49,17 @@ const EventModal = ({ setShowModal, event }: Props) => {
         initial="hidden"
         animate="visible"
         exit="exit"
-        className="relative top-20 m-auto max-w-full md:max-w-3xl bg-gray-300 p-4 md:p-8 rounded-lg shadow-xl"
+        className="relative top-20 m-auto max-w-full md:max-w-3xl bg-gray-300 dark:bg-black dark:border dark:border-glow p-4 md:p-8 rounded-lg shadow-xl"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between">
-          <h2 className="text-xl font-semibold text-gray-800">{event.name}</h2>
+          <h2 className="text-xl font-semibold text-gray-800 dark:text-glow">{event.name}</h2>
         </div>
 
         <div className="mt-6">
           <div className="flex items-start">
             <div className="w-2/3 pr-4">
-              <p className="text-gray-700 text-base">{event.description}</p>
+              <p className="text-gray-700 dark:text-glow text-base">{event.description}</p>
               <div className="mt-4">
                 <div className="flex flex-wrap mb-4">
                   <div className="h-10 flex items-center">
@@ -83,21 +83,21 @@ const EventModal = ({ setShowModal, event }: Props) => {
           <div className="mt-6">
             <div className="flex items-center">
               <LocationIcon />
-              <p className="ml-2 text-gray-700 text-sm">{event.location}</p>
+              <p className="ml-2 text-gray-700 text-sm dark:text-glow">{event.location}</p>
             </div>
             <div className="flex items-center mt-2">
               <ClockIcon />
-              <p className="ml-2 text-gray-700 text-sm">{formattedDateStr}</p>
+              <p className="ml-2 text-gray-700 text-sm dark:text-glow">{formattedDateStr}</p>
             </div>
             <div className="flex items-center mt-2">
               <TicketIcon />
-              <p className="ml-2 text-gray-700 text-sm">{event.price}</p>
+              <p className="ml-2 text-gray-700 text-sm dark:text-glow">{event.price}</p>
             </div>
             {event.link && (
               <div className="flex items-center mt-2">
                 <LinkIcon />
 
-                <p className="ml-2 text-gray-700 text-sm">
+                <p className="ml-2 text-gray-700 text-sm dark:text-glow">
                   <a href={event.link} target="_blank">
                     Link del evento
                   </a>

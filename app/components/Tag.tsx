@@ -6,7 +6,7 @@ interface Prop {
 
 export default function Tag({ tag }: Prop) {
   return (
-    <span className="px-2 py-1 bg-gray-600 rounded-full text-xs font-semibold text-white mr-2">
+    <span className="px-2 py-1 bg-gray-600  dark:bg-black dark:border dark:border-glow rounded-full text-xs font-semibold text-white dark:text-glow mr-2">
       {tag}
     </span>
   );

@@ -35,8 +35,8 @@ export default function EventList({ events }: Props) {
 
   return (
     <>
-      <div className="bg-gray-300 rounded-lg shadow-lg overflow-hidden mb-3 text-center py-2">
-        <p className="text-gray-800 font-bold">
+      <div className="bg-gray-300 dark:bg-black dark:border dark:border-glow rounded-lg shadow-lg overflow-hidden mb-3 text-center py-2">
+        <p className="text-gray-800 dark:text-glow font-bold">
           del {formattedDate(currentWeekStart.toISOString(), "d MMMM")} al{" "}
           {formattedDate(currentWeekEnd.toISOString(), "d MMMM, yyyy")}
         </p>
@@ -49,8 +49,8 @@ export default function EventList({ events }: Props) {
             ))}
           </div>
         ) : (
-          <div className="bg-gray-300 rounded-lg shadow-lg overflow-hidden mb-3">
-            <p className="text-center p-10 text-gray-800 font-bold">
+          <div className="bg-gray-300 dark:bg-black dark:border dark:border-glow rounded-lg shadow-lg overflow-hidden mb-3">
+            <p className="text-center p-10 text-gray-800 dark:text-glow font-bold">
               No hay eventos introducidos para esta semana
             </p>
           </div>

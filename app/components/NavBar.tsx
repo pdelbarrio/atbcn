@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import { InfoButton } from "./Icons";
 import { AnimatePresence } from "framer-motion";
 import ModalInfo from "./ModalInfo";
+import ThemeSwitcher from "../context/ThemeSwitcher";
 
 export default function NavBar() {
   const [signOutButton, setSignOutButton] = useState(false);
@@ -54,11 +55,11 @@ export default function NavBar() {
   }, [supabaseclient, router]);
 
   return (
-    <nav className="bg-gray-500 max-w-xl mx-auto p-2 md:max-w-1/2">
+    <nav className="bg-gray-500 dark:bg-black max-w-xl mx-auto p-2 md:max-w-1/2">
       <div className="flex flex-col justify-start h-[120px]">
         <div className="flex justify-between mx-8 mt-2">
           <div className="flex flex-col">
-            <Link href="/" className="font-bold text-gray-800 text-2xl">
+            <Link href="/" className="font-bold text-gray-800 text-2xl dark:text-glow">
               @bcn
             </Link>
           </div>
@@ -67,17 +68,20 @@ export default function NavBar() {
               <InfoButton />
             </button>
           </div>
+          <div>
+            <ThemeSwitcher />
+          </div>
           <div className="flex flex-col">
             <button
               onClick={handleRedirect}
-              className="bg-gray-300 text-gray-800 font-bold px-4 py-1 rounded-lg text-lg"
+              className="bg-gray-300 dark:bg-glow text-gray-800 font-bold px-4 py-1 rounded-lg text-lg"
             >
               add event
             </button>
             {signOutButton && (
               <button
                 onClick={handleSignout}
-                className="bg-black text-white text-xs p-2 px-2 mt-2 rounded-lg"
+                className="bg-black dark:bg-glow text-white dark:text-black text-xs p-2 px-2 mt-2 rounded-lg"
               >
                 SIGN OUT
               </button>

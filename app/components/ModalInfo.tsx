@@ -39,10 +39,10 @@ const ModalInfo = ({ setShowModal }: Props) => {
         initial="hidden"
         animate="visible"
         exit="exit"
-        className="relative top-20 m-auto max-w-full md:max-w-3xl bg-gray-300 p-4 md:p-8 rounded-lg shadow-xl"
+        className="relative top-20 m-auto max-w-full md:max-w-3xl bg-gray-300 dark:bg-black dark:border dark:border-glow p-4 md:p-8 rounded-lg shadow-xl"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="h-full overflow-auto text-sm">
+        <div className="h-full overflow-auto text-sm dark:text-glow">
           Bienvenid@ a <span className="font-bold">atbcn</span>. Agenda de
           eventos culturales de Barcelona. Aquí podrás descubrir y compartir
           información de eventos culturales en Barcelona y cercanías.

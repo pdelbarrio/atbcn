@@ -118,11 +118,11 @@ const PreviewModal = () => {
             initial="hidden"
             animate="visible"
             exit="exit"
-            className="relative top-20 m-auto max-w-full md:max-w-3xl bg-gray-300 p-4 md:p-8 rounded-lg shadow-xl"
+            className="relative top-20 m-auto max-w-full md:max-w-3xl bg-gray-300 dark:bg-black dark:border dark:border-glow  p-4 md:p-8 rounded-lg shadow-xl"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between">
-              <h2 className="text-xl font-semibold text-gray-800">
+              <h2 className="text-xl font-semibold text-gray-800 dark:text-glow">
                 {previewEvent.name}
               </h2>
             </div>
@@ -130,7 +130,7 @@ const PreviewModal = () => {
             <div className="mt-6">
               <div className="flex items-start">
                 <div className="w-2/3 pr-4">
-                  <p className="text-gray-700 text-base">
+                  <p className="text-gray-700 dark:text-glow text-base">
                     {previewEvent.description}
                   </p>
                   <div className="mt-4">
@@ -157,19 +157,19 @@ const PreviewModal = () => {
               <div className="mt-6 mb-2">
                 <div className="flex items-center">
                   <LocationIcon />
-                  <p className="ml-2 text-gray-700 text-sm">
+                  <p className="ml-2 text-gray-700 dark:text-glow text-sm">
                     {previewEvent.location}
                   </p>
                 </div>
                 <div className="flex items-center mt-2">
                   <ClockIcon />
-                  <p className="ml-2 text-gray-700 text-sm">
+                  <p className="ml-2 text-gray-700 dark:text-glow text-sm">
                     {formattedDateStr}
                   </p>
                 </div>
                 <div className="flex items-center mt-2">
                   <TicketIcon />
-                  <p className="ml-2 text-gray-700 text-sm">
+                  <p className="ml-2 text-gray-700 dark:text-glow text-sm">
                     {previewEvent.price}
                   </p>
                 </div>
@@ -177,7 +177,7 @@ const PreviewModal = () => {
                   <div className="flex items-center mt-2">
                     <LinkIcon />
 
-                    <p className="ml-2 text-gray-700 text-sm">
+                    <p className="ml-2 text-gray-700 dark:text-glow text-sm">
                       <a href={previewEvent.link} target="_blank">
                         Link del evento
                       </a>
@@ -188,13 +188,13 @@ const PreviewModal = () => {
 
               <div className="mt-6 flex justify-between">
                 <button
-                  className="bg-gray-600 text-white font-bold p-2 px-4 rounded justify-start"
+                  className="bg-gray-600 text-white dark:bg-glow dark:text-gray-800 font-bold p-2 px-4 rounded justify-start"
                   onClick={handleCancel}
                 >
                   Volver
                 </button>
                 <button
-                  className="bg-gray-600 text-white font-bold p-2 px-4 rounded justify-end"
+                  className="bg-gray-600 text-white dark:bg-glow dark:text-gray-800 font-bold p-2 px-4 rounded justify-end"
                   onClick={handleConfirm}
                 >
                   Confirmar
