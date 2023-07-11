@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 import { GlobalContextProvider } from "./context/events.context";
 import { AuthContextProvider } from "./context/auth.context";
+import Providers from "./context/theme.context";
 
 export default function RootLayout({
   children,
@@ -14,7 +15,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main className="bg-gray-500 min-h-screen w-screen">
+        <Providers>
+        <main className="bg-gray-500 dark:bg-black min-h-screen w-screen">
           <AuthContextProvider>
             <GlobalContextProvider>
               <NavBar />
@@ -22,6 +24,7 @@ export default function RootLayout({
             </GlobalContextProvider>
           </AuthContextProvider>
         </main>
+        </Providers>
       </body>
     </html>
   );

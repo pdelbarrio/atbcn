@@ -25,16 +25,16 @@ const EventRow = ({ event }: Props) => {
   return (
     <div
       onClick={() => (showModal ? close() : open())}
-      className="bg-gray-300 rounded-lg shadow-lg overflow-hidden mb-3 cursor-pointer touch:bg-gray-500"
+      className="bg-gray-300 dark:bg-black rounded-lg dark:border dark:border-glow shadow-lg overflow-hidden mb-3 cursor-pointer touch:bg-gray-500"
     >
       <div className="flex">
         <div className="w-3/4 p-4">
           <div className="flex justify-between mb-2">
             <div className="w-1/2">
-              <p className="font-bold text-gray-700">{formattedDateStr}</p>
+              <p className="font-bold text-gray-700 dark:text-glow">{formattedDateStr}</p>
             </div>
             <div className="w-1/2 text-right">
-              <p className="md:text-2xl font-bold text-gray-700">
+              <p className="md:text-2xl font-bold text-gray-700 dark:text-glow">
                 {event.name}
               </p>
               <p className="text-gray-600"></p>
@@ -48,8 +48,8 @@ const EventRow = ({ event }: Props) => {
               : null}
           </div>
         </div>
-        <div className="w-1/4 bg-gray-300 text-gray-700 px-2 py-4 text-right mr-2">
-          <p className="text-gray-600">{event.location}</p>
+        <div className="w-1/4 bg-gray-300 dark:bg-black text-gray-700 dark:text-glow px-2 py-4 text-right mr-2">
+          <p className="text-gray-600 dark:text-glow">{event.location}</p>
           <p className=" font-bold">{event.price}</p>
         </div>
       </div>
