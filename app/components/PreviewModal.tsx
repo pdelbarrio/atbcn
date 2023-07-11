@@ -155,29 +155,29 @@ const PreviewModal = () => {
               </div>
 
               <div className="mt-6 mb-2">
-                <div className="flex items-center">
+                <div className="flex items-center dark:bg-glow dark:rounded-lg">
                   <LocationIcon />
-                  <p className="ml-2 text-gray-700 dark:text-glow text-sm">
+                  <p className="ml-2 text-gray-700 dark:text-black text-sm">
                     {previewEvent.location}
                   </p>
                 </div>
-                <div className="flex items-center mt-2">
+                <div className="flex items-center mt-2 dark:bg-glow dark:rounded-lg">
                   <ClockIcon />
-                  <p className="ml-2 text-gray-700 dark:text-glow text-sm">
+                  <p className="ml-2 text-gray-700 dark:text-black text-sm">
                     {formattedDateStr}
                   </p>
                 </div>
-                <div className="flex items-center mt-2">
+                <div className="flex items-center mt-2 dark:bg-glow dark:rounded-lg">
                   <TicketIcon />
-                  <p className="ml-2 text-gray-700 dark:text-glow text-sm">
+                  <p className="ml-2 text-gray-700 dark:text-black text-sm">
                     {previewEvent.price}
                   </p>
                 </div>
                 {previewEvent.link && (
-                  <div className="flex items-center mt-2">
+                  <div className="flex items-center mt-2 dark:bg-glow dark:rounded-lg">
                     <LinkIcon />
 
-                    <p className="ml-2 text-gray-700 dark:text-glow text-sm">
+                    <p className="ml-2 text-gray-700 dark:text-black text-sm">
                       <a href={previewEvent.link} target="_blank">
                         Link del evento
                       </a>

@@ -58,7 +58,7 @@ const Recover = () => {
     <div className="flex flex-col items-center justify-center min-h-screen">
       <div className="w-full max-w-sm">
         <div className="px-8 pb-8 mb-4">
-          <p className="text-xs  text-gray-800 font-bold mb-4">
+          <p className="text-xs  text-gray-800 dark:text-glow font-bold mb-4">
             Recibirás un email para restablecer tu contraseña
           </p>
           <div className="mb-4">

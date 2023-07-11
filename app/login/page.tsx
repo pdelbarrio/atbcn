@@ -145,13 +145,13 @@ const Login = () => {
           <div className="flex flex-col">
             <button
               type="button"
-              className="h-[40px] bg-gray-300 text-gray-800 font-bold p-2 px-4 rounded mb-2"
+              className="h-[40px] bg-gray-300 dark:bg-glow text-gray-800 font-bold p-2 px-4 rounded mb-2"
               onClick={() => handleSignIn()}
             >
               Inicia sesión
             </button>
             <button
-              className="h-[40px] bg-gray-800 text-gray-300 font-bold p-2 px-4 rounded mb-2"
+              className="h-[40px] bg-gray-800 dark:bg-black dark:border dark:border-glow text-gray-300 dark:text-glow font-bold p-2 px-4 rounded mb-2"
               type="button"
               onClick={() => handleSignUp()}
             >

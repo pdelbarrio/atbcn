@@ -57,7 +57,8 @@ export default function NavBar() {
   return (
     <nav className="bg-gray-500 dark:bg-black max-w-xl mx-auto p-2 md:max-w-1/2">
       <div className="flex flex-col justify-start h-[120px]">
-        <div className="flex justify-between mx-8 mt-2">
+        {/* <div className="flex justify-between mx-8 mt-2"> */}
+        <div className="flex justify-between mt-2">
           <div className="flex flex-col">
             <Link href="/" className="font-bold text-gray-800 text-2xl dark:text-glow">
               @bcn
@@ -74,7 +75,7 @@ export default function NavBar() {
           <div className="flex flex-col">
             <button
               onClick={handleRedirect}
-              className="bg-gray-300 dark:bg-glow text-gray-800 font-bold px-4 py-1 rounded-lg text-lg"
+              className="bg-gray-300 dark:bg-glow text-gray-800 font-bold px-4 py-1 rounded-lg text-base"
             >
               add event
             </button>
