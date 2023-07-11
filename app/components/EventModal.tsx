@@ -81,23 +81,23 @@ const EventModal = ({ setShowModal, event }: Props) => {
             </div>
           </div>
           <div className="mt-6">
-            <div className="flex items-center">
+            <div className="flex items-center dark:bg-glow dark:rounded-lg">
               <LocationIcon />
-              <p className="ml-2 text-gray-700 text-sm dark:text-glow">{event.location}</p>
+              <p className="ml-2 text-gray-700 text-sm dark:text-black">{event.location}</p>
             </div>
-            <div className="flex items-center mt-2">
+            <div className="flex items-center mt-2 dark:bg-glow dark:rounded-lg">
               <ClockIcon />
-              <p className="ml-2 text-gray-700 text-sm dark:text-glow">{formattedDateStr}</p>
+              <p className="ml-2 text-gray-700 text-sm dark:text-black">{formattedDateStr}</p>
             </div>
-            <div className="flex items-center mt-2">
+            <div className="flex items-center mt-2 dark:bg-glow dark:rounded-lg">
               <TicketIcon />
-              <p className="ml-2 text-gray-700 text-sm dark:text-glow">{event.price}</p>
+              <p className="ml-2 text-gray-700 text-sm dark:text-black">{event.price}</p>
             </div>
             {event.link && (
-              <div className="flex items-center mt-2">
+              <div className="flex items-center mt-2 dark:bg-glow dark:rounded-lg">
                 <LinkIcon />
 
-                <p className="ml-2 text-gray-700 text-sm dark:text-glow">
+                <p className="ml-2 text-gray-700 text-sm dark:text-black">
                   <a href={event.link} target="_blank">
                     Link del evento
                   </a>
